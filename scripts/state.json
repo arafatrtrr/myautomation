@@ -1,0 +1,45 @@
+{
+    "race_winners": [],
+    "instances": {
+        "Browser-1": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-2": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-3": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-4": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-5": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-6": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-7": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-8": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-9": {
+            "status": "finished",
+            "gate": 100
+        },
+        "Browser-10": {
+            "status": "finished",
+            "gate": 100
+        }
+    }
+}

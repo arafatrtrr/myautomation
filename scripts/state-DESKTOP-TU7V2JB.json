@@ -1,0 +1,35 @@
+{
+    "visit_website_clicks": 3,
+    "instances": {
+        "Browser-1": {
+            "status": "finished"
+        },
+        "Browser-2": {
+            "status": "finished"
+        },
+        "Browser-3": {
+            "status": "finished"
+        },
+        "Browser-4": {
+            "status": "finished"
+        },
+        "Browser-5": {
+            "status": "finished"
+        },
+        "Browser-6": {
+            "status": "finished"
+        },
+        "Browser-7": {
+            "status": "finished"
+        },
+        "Browser-8": {
+            "status": "finished"
+        },
+        "Browser-9": {
+            "status": "finished"
+        },
+        "Browser-10": {
+            "status": "finished"
+        }
+    }
+}

@@ -1,0 +1,1070 @@
+2025-09-20 18:50:36 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 86, in run_single_browser_instance
+    spoof_script = js_spoofer.generate_full_spoof_script(
+        # ... (other args are the same)
+    ...<6 lines>...
+        timezone=timezone # Pass the timezone
+    )
+TypeError: generate_full_spoof_script() got an unexpected keyword argument 'web_renderer'. Did you mean 'webgl_renderer'?
+2025-09-20 19:07:36 +06 - ERROR - scripts.workflow - [Browser-1] TIMEZONE VERIFICATION FAILED: Mismatch found!
+2025-09-20 19:07:36 +06 - ERROR - scripts.workflow - [Browser-1]   -> Parsed Local:  'Sat Sep 20 2025 09:06:47'
+2025-09-20 19:07:36 +06 - ERROR - scripts.workflow - [Browser-1]   -> Parsed System: 'Sat Sep 20 2025 19:06:47'
+2025-09-20 19:07:41 +06 - ERROR - scripts.workflow - [Browser-6] TIMEZONE VERIFICATION FAILED: Mismatch found!
+2025-09-20 19:07:41 +06 - ERROR - scripts.workflow - [Browser-6]   -> Parsed Local:  'Sat Sep 20 2025 09:07:03'
+2025-09-20 19:07:41 +06 - ERROR - scripts.workflow - [Browser-6]   -> Parsed System: 'Sat Sep 20 2025 19:07:03'
+2025-09-20 19:07:54 +06 - ERROR - scripts.workflow - [Browser-4] TIMEZONE VERIFICATION FAILED: Mismatch found!
+2025-09-20 19:07:54 +06 - ERROR - scripts.workflow - [Browser-4]   -> Parsed Local:  'Sat Sep 20 2025 08:06:57'
+2025-09-20 19:07:54 +06 - ERROR - scripts.workflow - [Browser-4]   -> Parsed System: 'Sat Sep 20 2025 19:06:57'
+2025-09-20 19:07:57 +06 - ERROR - scripts.workflow - [Browser-9] TIMEZONE VERIFICATION FAILED: Mismatch found!
+2025-09-20 19:07:57 +06 - ERROR - scripts.workflow - [Browser-9]   -> Parsed Local:  'Sat Sep 20 2025 08:07:38'
+2025-09-20 19:07:57 +06 - ERROR - scripts.workflow - [Browser-9]   -> Parsed System: 'Sat Sep 20 2025 19:07:38'
+2025-09-20 19:08:07 +06 - ERROR - scripts.workflow - [Browser-7] Could not get current URL for verification. Error: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0025FEC0]
+	(No symbol) [0x0027DFDF]
+	(No symbol) [0x002E46AF]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:07 +06 - ERROR - scripts.workflow - [Browser-3] Could not get current URL for verification. Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:07 +06 - ERROR - scripts.workflow - [Browser-3] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:08 +06 - ERROR - scripts.workflow - [Browser-5] Could not get current URL for verification. Error: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x00260440]
+	(No symbol) [0x002603C6]
+	(No symbol) [0x0025EC43]
+	(No symbol) [0x0025F9DD]
+	(No symbol) [0x00276B03]
+	(No symbol) [0x0027935A]
+	(No symbol) [0x002793D7]
+	(No symbol) [0x00301E6A]
+	(No symbol) [0x00301B57]
+	(No symbol) [0x002DD7BC]
+	(No symbol) [0x002FF20A]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:08 +06 - ERROR - scripts.workflow - [Browser-8] Could not get current URL for verification. Error: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0025FEC0]
+	(No symbol) [0x0027DFDF]
+	(No symbol) [0x002E46AF]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:09 +06 - ERROR - scripts.workflow - [Browser-7] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x0027055E]
+	(No symbol) [0x002AB9D8]
+	(No symbol) [0x002DD676]
+	(No symbol) [0x002D904C]
+	(No symbol) [0x002D85C6]
+	(No symbol) [0x00243245]
+	(No symbol) [0x0024379E]
+	(No symbol) [0x00243C1D]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x00242F10]
+	(No symbol) [0x00242ACA]
+	GetHandleVerifier [0x007AE9AC+3768620]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:09 +06 - ERROR - scripts.workflow - [Browser-5] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x0027055E]
+	(No symbol) [0x002AB9D8]
+	(No symbol) [0x002DD676]
+	(No symbol) [0x002D904C]
+	(No symbol) [0x002D85C6]
+	(No symbol) [0x00243245]
+	(No symbol) [0x0024379E]
+	(No symbol) [0x00243C1D]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x00242F10]
+	(No symbol) [0x00242ACA]
+	GetHandleVerifier [0x007AE9AC+3768620]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:09 +06 - ERROR - scripts.workflow - [Browser-8] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x0027055E]
+	(No symbol) [0x002AB9D8]
+	(No symbol) [0x002DD676]
+	(No symbol) [0x002D904C]
+	(No symbol) [0x002D85C6]
+	(No symbol) [0x00243245]
+	(No symbol) [0x0024379E]
+	(No symbol) [0x00243C1D]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x00242F10]
+	(No symbol) [0x00242ACA]
+	GetHandleVerifier [0x007AE9AC+3768620]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:10 +06 - ERROR - scripts.workflow - [Browser-2] Could not get current URL for verification. Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:08:10 +06 - ERROR - scripts.workflow - [Browser-2] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:16:34 +06 - ERROR - scripts.workflow - [Browser-10] Could not get current URL for verification. Error: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 19:16:34 +06 - ERROR - scripts.workflow - [Browser-10] An unexpected error occurred during timezone verification.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 48, in verify_timezone_match
+    local_time_element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, 'td.local-time')))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 110, in _predicate
+    return driver.find_element(*locator)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0041C7F3+24435]
+	(No symbol) [0x003A2074]
+	(No symbol) [0x002706E3]
+	(No symbol) [0x0024F83E]
+	(No symbol) [0x002E455E]
+	(No symbol) [0x002FEB19]
+	(No symbol) [0x002DD5B6]
+	(No symbol) [0x002AC54F]
+	(No symbol) [0x002AD894]
+	GetHandleVerifier [0x007270A3+3213347]
+	GetHandleVerifier [0x0073B0C9+3295305]
+	GetHandleVerifier [0x0073558C+3271948]
+	GetHandleVerifier [0x004B7360+658144]
+	(No symbol) [0x003AB27D]
+	(No symbol) [0x003A8208]
+	(No symbol) [0x003A83A9]
+	(No symbol) [0x0039AAC0]
+	BaseThreadInitThunk [0x76835D49+25]
+	RtlInitializeExceptionChain [0x7775D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7775D661+561]
+
+2025-09-20 20:24:09 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 82, in run_single_browser_instance
+    spoof_script = js_spoofer.generate_full_spoof_script(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'scripts.js_spoofer' has no attribute 'generate_full_spoof_script'
+2025-09-20 20:32:04 +06 - ERROR - scripts.workflow - [Browser-1] An unexpected critical error occurred in the workflow: HTTPConnectionPool(host='localhost', port=4183): Read timed out. (read timeout=120)
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 34, in run_browser_workflow
+    driver.get(IP_CHECKER_URL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=4183): Read timed out. (read timeout=120)
+2025-09-20 20:51:08 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: New tab did not open after clicking the link. Closing instance.
+2025-09-20 20:55:34 +06 - ERROR - scripts.workflow - [Browser-1] An unexpected critical error occurred in the workflow: HTTPConnectionPool(host='localhost', port=6698): Read timed out. (read timeout=120)
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 34, in run_browser_workflow
+    driver.get(IP_CHECKER_URL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=6698): Read timed out. (read timeout=120)
+2025-09-20 20:59:04 +06 - ERROR - scripts.workflow - [Browser-1] An unexpected critical error occurred in the workflow: HTTPConnectionPool(host='localhost', port=6763): Read timed out. (read timeout=120)
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 34, in run_browser_workflow
+    driver.get(IP_CHECKER_URL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=6763): Read timed out. (read timeout=120)
+2025-09-20 21:01:35 +06 - ERROR - scripts.workflow - [Browser-1] An unexpected critical error occurred in the workflow: HTTPConnectionPool(host='localhost', port=6840): Read timed out. (read timeout=120)
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 34, in run_browser_workflow
+    driver.get(IP_CHECKER_URL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=6840): Read timed out. (read timeout=120)
+2025-09-20 21:05:34 +06 - ERROR - scripts.workflow - [Browser-1] An unexpected critical error occurred in the workflow: HTTPConnectionPool(host='localhost', port=12049): Read timed out. (read timeout=120)
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 34, in run_browser_workflow
+    driver.get(IP_CHECKER_URL)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=12049): Read timed out. (read timeout=120)
+2025-09-21 08:36:58 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: New tab did not open after clicking the link. Closing instance.
+2025-09-21 08:53:36 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 96, in run_single_browser_instance
+    workflow.run_browser_workflow(driver=driver, instance_id=instance_id, spoof_script=spoof_script)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: run_browser_workflow() got an unexpected keyword argument 'spoof_script'
+2025-09-21 08:56:52 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: New tab did not open after clicking the link. Closing instance.
+2025-09-21 09:05:15 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 96, in run_single_browser_instance
+    workflow.run_browser_workflow(driver=driver, instance_id=instance_id, spoof_script=spoof_script)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: run_browser_workflow() got an unexpected keyword argument 'spoof_script'
+2025-09-21 09:05:43 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 96, in run_single_browser_instance
+    workflow.run_browser_workflow(driver=driver, instance_id=instance_id, spoof_script=spoof_script)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: run_browser_workflow() got an unexpected keyword argument 'spoof_script'
+2025-09-21 09:06:14 +06 - ERROR - __main__ - [Browser-1] A critical error occurred.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\main.py", line 96, in run_single_browser_instance
+    workflow.run_browser_workflow(driver=driver, instance_id=instance_id, spoof_script=spoof_script)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: run_browser_workflow() got an unexpected keyword argument 'spoof_script'
+2025-09-21 09:09:58 +06 - ERROR - scripts.workflow - [Browser-1] A critical unhandled error occurred in the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002353D417790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 45, in run_browser_workflow
+    driver.refresh()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 719, in refresh
+    self.execute(Command.REFRESH)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8769): Max retries exceeded with url: /session/b3b2a051fe1a1f4e130de478fe0883ff/refresh (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002353D417790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-09-21 09:56:25 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s6.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-21 10:43:03 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s6.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-21 10:45:35 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not switch to or prepare the third tab.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 123, in run_browser_workflow
+    WebDriverWait(driver, 15).until(EC.number_of_windows_to_be(len(windows_before_click) + 1))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2025-09-21 11:18:34 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click the 'Visit Website' link.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 82, in run_browser_workflow
+    link_element = WebDriverWait(driver, 15).until(EC.element_to_be_clickable(link_locator))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0102C7F3+24435]
+	(No symbol) [0x00FB2074]
+	(No symbol) [0x00E806E3]
+	(No symbol) [0x00EC8B39]
+	(No symbol) [0x00EC8E8B]
+	(No symbol) [0x00F11AC2]
+	(No symbol) [0x00EED804]
+	(No symbol) [0x00F0F20A]
+	(No symbol) [0x00EED5B6]
+	(No symbol) [0x00EBC54F]
+	(No symbol) [0x00EBD894]
+	GetHandleVerifier [0x013370A3+3213347]
+	GetHandleVerifier [0x0134B0C9+3295305]
+	GetHandleVerifier [0x0134558C+3271948]
+	GetHandleVerifier [0x010C7360+658144]
+	(No symbol) [0x00FBB27D]
+	(No symbol) [0x00FB8208]
+	(No symbol) [0x00FB83A9]
+	(No symbol) [0x00FAAAC0]
+	BaseThreadInitThunk [0x75905D49+25]
+	RtlInitializeExceptionChain [0x77A6D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77A6D661+561]
+
+2025-09-21 11:24:13 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click the 'Visit Website' link.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 144, in run_browser_workflow
+    visit_link = WebDriverWait(driver, 15).until(EC.element_to_be_clickable(visit_link_locator))
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0102C7F3+24435]
+	(No symbol) [0x00FB2074]
+	(No symbol) [0x00E806E3]
+	(No symbol) [0x00EC8B39]
+	(No symbol) [0x00EC8E8B]
+	(No symbol) [0x00F11AC2]
+	(No symbol) [0x00EED804]
+	(No symbol) [0x00F0F20A]
+	(No symbol) [0x00EED5B6]
+	(No symbol) [0x00EBC54F]
+	(No symbol) [0x00EBD894]
+	GetHandleVerifier [0x013370A3+3213347]
+	GetHandleVerifier [0x0134B0C9+3295305]
+	GetHandleVerifier [0x0134558C+3271948]
+	GetHandleVerifier [0x010C7360+658144]
+	(No symbol) [0x00FBB27D]
+	(No symbol) [0x00FB8208]
+	(No symbol) [0x00FB83A9]
+	(No symbol) [0x00FAAAC0]
+	BaseThreadInitThunk [0x75905D49+25]
+	RtlInitializeExceptionChain [0x77A6D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77A6D661+561]
+
+2025-09-21 11:39:46 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 11:41:52 +06 - ERROR - scripts.workflow - [Browser-1] A critical unhandled error occurred in the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\OneDrive\Documents\my_automation\scripts\workflow.py", line 136, in run_browser_workflow
+    visit_link = WebDriverWait(driver, 30).until(
+        EC.element_to_be_clickable((By.LINK_TEXT, VISIT_WEBSITE_TEXT))
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 137, in until
+    value = method(self._driver)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 633, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 917, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0102C7F3+24435]
+	(No symbol) [0x00FB2074]
+	(No symbol) [0x00E806E3]
+	(No symbol) [0x00E6FEC0]
+	(No symbol) [0x00E8DFDF]
+	(No symbol) [0x00EF46AF]
+	(No symbol) [0x00F0EB19]
+	(No symbol) [0x00EED5B6]
+	(No symbol) [0x00EBC54F]
+	(No symbol) [0x00EBD894]
+	GetHandleVerifier [0x013370A3+3213347]
+	GetHandleVerifier [0x0134B0C9+3295305]
+	GetHandleVerifier [0x0134558C+3271948]
+	GetHandleVerifier [0x010C7360+658144]
+	(No symbol) [0x00FBB27D]
+	(No symbol) [0x00FB8208]
+	(No symbol) [0x00FB83A9]
+	(No symbol) [0x00FAAAC0]
+	BaseThreadInitThunk [0x75905D49+25]
+	RtlInitializeExceptionChain [0x77A6D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77A6D661+561]
+
+2025-09-21 14:37:12 +06 - ERROR - scripts.workflow - [Browser-9] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:14 +06 - ERROR - scripts.workflow - [Browser-4] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:18 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:20 +06 - ERROR - scripts.workflow - [Browser-6] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:25 +06 - ERROR - scripts.workflow - [Browser-3] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:28 +06 - ERROR - scripts.workflow - [Browser-5] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:28 +06 - ERROR - scripts.workflow - [Browser-8] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:37:33 +06 - ERROR - scripts.workflow - [Browser-2] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:42:19 +06 - ERROR - scripts.workflow - [Browser-2] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:42:28 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:42:38 +06 - ERROR - scripts.workflow - [Browser-7] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:42:38 +06 - ERROR - scripts.workflow - [Browser-8] FAILED: Could not find or click 'Visit Website' link. Aborting.
+2025-09-21 14:51:06 +06 - ERROR - scripts.workflow - [Browser-1] FAILED: Could not find or click 'Visit Website' link. Aborting.
