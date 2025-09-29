@@ -1,21 +1,25 @@
 {
-    "race_winners": [],
+    "race_winners": [
+        "Browser-1",
+        "Browser-2",
+        "Browser-10"
+    ],
     "instances": {
         "Browser-1": {
-            "status": "finished",
-            "gate": 100
+            "status": "title_ok",
+            "gate": 4
         },
         "Browser-2": {
-            "status": "finished",
-            "gate": 100
+            "status": "title_ok",
+            "gate": 4
         },
         "Browser-3": {
             "status": "finished",
             "gate": 100
         },
         "Browser-4": {
-            "status": "finished",
-            "gate": 100
+            "status": "failed",
+            "gate": 3
         },
         "Browser-5": {
             "status": "finished",
@@ -26,8 +30,8 @@
             "gate": 100
         },
         "Browser-7": {
-            "status": "finished",
-            "gate": 100
+            "status": "failed",
+            "gate": 3
         },
         "Browser-8": {
             "status": "finished",
@@ -38,8 +42,8 @@
             "gate": 100
         },
         "Browser-10": {
-            "status": "finished",
-            "gate": 100
+            "status": "title_ok",
+            "gate": 4
         }
     }
 }

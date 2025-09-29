@@ -50,24 +50,32 @@ def load_user_agents(project_root):
         sys.exit(1)
 
 
-# In scripts/main.py, replace the existing run_single_browser_instance function
 
-def run_single_browser_instance(instance_id: str, config: dict, user_agents: list, proxy_data: dict):
-    # This worker function is unchanged except for the workflow call
+# In scripts/main.py, replace the entire run_single_browser_instance function with this
+
+def run_single_browser_instance(instance_id: str, project_root: str, config: dict, user_agents: list, proxy_data: dict):
     proxy = proxy_data['proxy']
     timezone = proxy_data['timezone']
     
     extension_path = None
     try:
-        #... (Setup is the same as before)
         selected_user_agent = random.choice(user_agents)
         webgl_profile = webgl_spoofer.get_webgl_profile_for_ua(selected_user_agent)
         hardware_profile = hardware_spoofer.get_hardware_profile_for_ua(selected_user_agent)
         spoof_details = ua_parser.get_spoof_details(selected_user_agent)
+        
+        unique_hex = secrets.token_hex(8)
+        profile_name = f"profile_{instance_id}_{unique_hex}"
+        profile_path = os.path.join(project_root, 'profiles', profile_name)
+        os.makedirs(profile_path, exist_ok=True)
+        logger.info(f"[{instance_id}] Created custom profile directory at: {profile_path}")
+        
         extension_path = proxy_handler.create_proxy_extension(proxy, instance_id)
 
         options = browser_config.get_chrome_options(
-            binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+            binary_path=config['CHROMIUM_BINARY_PATH'],
+            profile_path=profile_path,  # <-- FIX #1: Pass the created profile_path
+            user_agent=selected_user_agent,
             width=config['MOBILE_WIDTH'], height=config['MOBILE_HEIGHT'],
             pixel_ratio=config['MOBILE_PIXEL_RATIO'], proxy_extension_path=extension_path,
             timezone=timezone
@@ -80,7 +88,6 @@ def run_single_browser_instance(instance_id: str, config: dict, user_agents: lis
             driver = webdriver.Chrome(service=service, options=options)
             
             spoof_script = js_spoofer.generate_full_spoof_script(
-                # ... (arguments are the same)
                 user_agent=selected_user_agent, platform=spoof_details['platform'],
                 app_version=spoof_details['appVersion'], vendor=spoof_details['vendor'],
                 width=config['MOBILE_WIDTH'], height=config['MOBILE_HEIGHT'],
@@ -91,7 +98,6 @@ def run_single_browser_instance(instance_id: str, config: dict, user_agents: lis
             )
             cdp_handler.apply_spoofing_script(driver=driver, script_source=spoof_script)
             
-            # Pass the chosen URLs to the workflow
             workflow.run_browser_workflow(
                 driver=driver, instance_id=instance_id, cdp_handler=cdp_handler, 
                 spoof_script=spoof_script, shared_state=shared_state,
@@ -103,15 +109,15 @@ def run_single_browser_instance(instance_id: str, config: dict, user_agents: lis
                 driver.quit()
     except Exception:
         logger.error(f"[{instance_id}] A critical error occurred in the main worker.", exc_info=True)
-        shared_state.update_instance_status(instance_id, "critical_failure")
+        # <-- FIX #2: Use the correct function name and pattern
+        shared_state.update_instance_gate(instance_id, 99, "critical_failure")
     finally:
         if extension_path and os.path.exists(extension_path):
             os.remove(extension_path)
         logger.info(f"[{instance_id}] Thread finished.")
 
-
 # --- NEW PROXY CHECKING WORKER ---
-def check_proxy_worker(proxy, valid_proxies_list, lock, max_retries=6, retry_delay=10):
+def check_proxy_worker(proxy, valid_proxies_list, lock, max_retries=3, retry_delay=10):
     """
     Worker function to check a single proxy with retry logic for API failures.
     """
@@ -169,14 +175,10 @@ def get_user_choice(prompt_text: str, options: list) -> str:
             print("Invalid input. Please enter a number.")
 
 
-
-# In scripts/main.py, replace the existing main function
-
 def main():
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     logger_setup.setup_logging(project_root)
     
-    # --- NEW: Get user choices for the workflow ---
     selected_iframe_url = get_user_choice("Select an initial page for the workflow:", workflow.IFRAME_PAGE_OPTIONS)
     selected_target_link = get_user_choice("Select a target link to click in the first iframe:", workflow.TARGET_LINK_OPTIONS)
     
@@ -187,15 +189,14 @@ def main():
         'NUMBER_OF_BROWSERS': 10, 'LAUNCH_DELAY_SECONDS': 10, 
         'MOBILE_WIDTH': 750, 'MOBILE_HEIGHT': 1334,
         'MOBILE_PIXEL_RATIO': 2.0, 'MOBILE_COLOR_DEPTH': 24,
-        'IFRAME_PAGE_URL': selected_iframe_url,      # <-- Add chosen URL to config
-        'TARGET_LINK_TEXT': selected_target_link   # <-- Add chosen link to config
+        'IFRAME_PAGE_URL': selected_iframe_url,
+        'TARGET_LINK_TEXT': selected_target_link
     }
     
     config.update(load_config(project_root))
     user_agents = load_user_agents(project_root)
     proxy_file_path = os.path.join(project_root, 'config', 'proxies.txt')
 
-    # ... The rest of the main function (batch loop, proxy checking, etc.) is the same ...
     batch_number = 1
     while True:
         logger.info(f"--- Starting Batch #{batch_number} ---")
@@ -242,8 +243,11 @@ def main():
         threads = []
         for i, proxy_data in enumerate(valid_proxies_for_run):
             instance_id = instance_ids[i]
+            
+            # --- THIS IS THE CORRECTED THREAD CREATION LINE ---
             thread = threading.Thread(target=run_single_browser_instance,
-                args=(instance_id, config, user_agents, proxy_data))
+                args=(instance_id, project_root, config, user_agents, proxy_data))
+                
             threads.append(thread)
             thread.start()
             logger.info(f"Launched thread for {instance_id}.")
@@ -273,7 +277,8 @@ def main():
             batch_number += 1
     
     logger.info("--- All batches completed or script was stopped. Automation Finished. ---")
-    
+
+
     
 if __name__ == "__main__":
     main()

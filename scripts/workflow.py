@@ -12,20 +12,20 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 # --- Workflow Configuration Options ---
 IFRAME_PAGE_OPTIONS = [
     {'desc': 'this is from momin', 'url': 'https://tinyurl.com/momin10k-003'},
-    {'desc': 'this is from arefin', 'url': 'https://tinyurl.com/cbjdek-003'},
+    {'desc': 'this is from arefin', 'url': 'https://tinyurl.com/momin10k-003'},
     {'desc': 'this is from thisha', 'url': 'https://cmdkduen.com'},
 ]
 
 TARGET_LINK_OPTIONS = [
-    {'desc': 'this is jakafiya', 'url': 'https://tinyurl.com/5n6s6hxt'},
-    {'desc': 'this is from jfiej', 'url': 'https://ndjirnr.com'},
-    {'desc': 'this is from nvhe', 'url': 'https://tinndjfr.com'},
+    {'desc': 'momin 1', 'url': 'https://tinyurl.com/5n6s6hxt'},
+    {'desc': 'mom', 'url': 'mmmmm'},
+    {'desc': 'momin 3', 'url': 'https://tinyurl.com/2emw5ek6'},
 ]
 
 MASTER_IFRAME_ID = "master-1"
 VISIT_WEBSITE_TEXT = "Visit Website"
 STATIC_SLEEP = 10
-WINNERS_COUNT = 5
+WINNERS_COUNT = 3
 
 logger = logging.getLogger(__name__)
 
@@ -47,7 +47,9 @@ def _get_title_with_retry(driver: WebDriver, instance_id: str, wait: WebDriverWa
     except Exception:
         logger.error(f"[{instance_id}] Unexpected error getting page title.", exc_info=True)
         return None
+ 
 
+# In scripts/workflow.py, replace the entire run_browser_workflow function
 
 def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof_script: str, shared_state, 
                          iframe_page_url: str, target_link_text: str):
@@ -58,8 +60,8 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
     wait_25s = WebDriverWait(driver, 25)
     
     try:
-        # === PHASE 1: Initial Navigation & First Tab Hop ===
-        driver.get(iframe_page_url) # Use the chosen URL
+        # === PHASE 1, 2, and beginning of 3 are unchanged ===
+        driver.get(iframe_page_url)
         time.sleep(STATIC_SLEEP)
         
         title = _get_title_with_retry(driver, instance_id, wait_20s)
@@ -69,7 +71,7 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
         time.sleep(2)
         original_window = driver.current_window_handle
-        wait_25s.until(EC.element_to_be_clickable((By.LINK_TEXT, target_link_text))).click() # Use the chosen link text
+        wait_25s.until(EC.element_to_be_clickable((By.LINK_TEXT, target_link_text))).click()
         
         wait_20s.until(EC.number_of_windows_to_be(2))
         new_window = [w for w in driver.window_handles if w != original_window][0]
@@ -77,7 +79,6 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         cdp_handler.apply_spoofing_script(driver=driver, script_source=spoof_script)
         driver.refresh()
 
-        # === PHASE 2: Second Page Navigation ===
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
         shared_state.update_instance_gate(instance_id, 2, "title_ok" if title else "failed")
@@ -91,7 +92,6 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         if not eligible_links: raise Exception("No eligible random links found.")
         random.choice(eligible_links).click()
 
-        # === PHASE 3: Third Page and "Visit Website" Race ===
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
         shared_state.update_instance_gate(instance_id, 3, "title_ok" if title else "failed")
@@ -103,21 +103,26 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         time.sleep(2)
 
         try:
-            visit_locator = (By.XPATH, f".//a[text()='{VISIT_WEBSITE_TEXT}'] | .//span[text()='{VISIT_WEBSITE_TEXT}']")
+            # --- NEW, MORE COMPLEX LOCATOR ---
+            # This XPath finds an <a> tag that EITHER contains the 'Visit Website' text
+            # OR contains a child <span> with a class 'p_si22'.
+            visit_locator = (By.XPATH, f"//a[contains(., '{VISIT_WEBSITE_TEXT}') or .//span[contains(@class, 'p_si22')]]")
+
             wait_25s.until(EC.element_to_be_clickable(visit_locator))
             
             is_winner = shared_state.attempt_to_win_race(instance_id, WINNERS_COUNT)
             if is_winner:
+                # We re-find the element to avoid StaleElementReferenceException
                 driver.find_element(*visit_locator).click()
             else:
                 logger.warning(f"[{instance_id}] Lost race or limit reached. Terminating.")
-                return
+                return # Losers exit here
         except TimeoutException:
-            logger.error(f"[{instance_id}] Could not find '{VISIT_WEBSITE_TEXT}'. Terminating.")
+            logger.error(f"[{instance_id}] Could not find '{VISIT_WEBSITE_TEXT}' using complex locator. Terminating.")
             shared_state.update_instance_gate(instance_id, 99, "failed")
             return
             
-        # === PHASE 4: Winners' Final Actions ===
+        # === PHASE 4: Winners' Final Actions (unchanged) ===
         logger.info(f"[{instance_id}] Proceeding as a WINNER.")
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
