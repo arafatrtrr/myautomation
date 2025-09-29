@@ -20,9 +20,9 @@ from selenium.common.exceptions import NoSuchElementException, WebDriverExceptio
 
 
 # ------------------- USER VALUES (from your message) -------------------
-proxy_str = "pr-na.pyproxy.com:16666:new3409k-zone-resi-region-us-session-e7596f405232-sessTime-120:Usae345uh"
-user_agent = "Mozilla/5.0 (Linux; Android 14; SM-S928K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.4 Chrome/139.0.7114.21 Mobile Safari/537.36"
-start_url = "https://tinyurl.com/momin005-001"
+proxy_str = "b2b-s1.liveproxies.io:7383:LV12737418-lv_us-56473:OhConlW8sH99NuQyNtcz"
+user_agent = "Mozilla/5.0 (Linux; Android 13; SM-S128K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/25.4 Chrome/139.0.7214.21 Mobile Safari/537.36"
+start_url = "https://tinyurl.com/momin10k-003"
 # ------------------- LOCAL BINARY / CHROMEDRIVER PATHS -------------------
 CHROMIUM_BINARY_PATH = r"C:\Users\trr\.gologin\browser\orbita-browser-134\chrome.exe"
 CHROMEDRIVER_PATH = r"C:\chromedriver.exe"
@@ -118,7 +118,7 @@ def build_driver(proxy_string, user_agent_str):
     # Try to reduce automation fingerprint
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option('useAutomationExtension', False)
-    options.add_argument("--start-maximized")
+   # options.add_argument("--start-maximized")
 
     service = Service(CHROMEDRIVER_PATH)
     driver = webdriver.Chrome(service=service, options=options)
@@ -279,7 +279,16 @@ Interactive REPL commands:
                             driver.switch_to.frame(iframe_id)
                             print(f"Switched to iframe with ID: {iframe_id}")
                         except Exception as e:
-                            print(f"Error switching to iframe with ID {iframe_id}:", e)     
+                            print(f"Error switching to iframe with ID {iframe_id}:", e) 
+
+            elif cmd == "find_span":
+                    spans = driver.find_elements(By.TAG_NAME, "span")
+                    print(f"Found {len(spans)} span elements.")
+                    for i, span in enumerate(spans[:10], 1):  # Limit to first 10
+                        print(f"  [{i}] Text: {span.text}")
+                        if i == 15 and len(spans) > 10:
+                            print("  ... (truncated)")
+                            break    
                     
             elif cmd == "switch_default":
                 driver.switch_to.default_content()
@@ -289,9 +298,9 @@ Interactive REPL commands:
                 if not args:
                     print("Usage: find_xpath <xpath>")
                     continue
-                xpath = " ".join(args)
+                xpath = " ".join(args) # In case xpath has spaces
                 try:
-                    elements = driver.find_elements(By.XPATH, xpath)
+                    elements = driver.find_elements(By.XPATH, xpath) #
                     print(f"Found {len(elements)} element(s) for XPath: {xpath}")
                     for i, el in enumerate(elements, 1):
                         text = el.text
@@ -300,8 +309,18 @@ Interactive REPL commands:
                         if href:
                             print(f"      href: {href}")
                 except Exception as e:
-                    print("Error finding XPath:", e)
+                    print("Error finding XPath:", e) 
 
+            elif cmd == "find_a":
+                a_tags = driver.find_elements(By.TAG_NAME, "a")
+                print(f"Found {len(a_tags)} anchor elements.")
+                for i, a_tag in enumerate(a_tags[:10], 1):  # Limit to first 10
+                    href = a_tag.get_attribute("href")
+                    text = a_tag.text
+                    print(f"  [{i}] Text: {text}, Href: {href}")
+                    if i == 10 and len(a_tags) > 10:
+                        print("  ... (truncated)")
+                        break
 
             elif cmd == "quit":
                 print("Closing browser and exiting.")
@@ -343,7 +362,7 @@ def main():
             print("Switched to first iframe.")
 
             # Find <a> by its visible text
-            link_text = "https://tinyurl.com/ujc3dxp8"
+            link_text = "https://tinyurl.com/2emw5ek6"
             try:
                 # Try to find the <a> element by exact match first, then fallback to partial match
                 try:

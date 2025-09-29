@@ -15532,3 +15532,2579 @@ Stacktrace:
 2025-09-29 03:28:50 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
 2025-09-29 03:40:20 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
 2025-09-29 03:46:33 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
+2025-09-29 07:38:57 +06 - ERROR - __main__ - [Browser-1] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:07 +06 - ERROR - __main__ - [Browser-2] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:17 +06 - ERROR - __main__ - [Browser-3] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:27 +06 - ERROR - __main__ - [Browser-4] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:37 +06 - ERROR - __main__ - [Browser-5] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:47 +06 - ERROR - __main__ - [Browser-6] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:39:57 +06 - ERROR - __main__ - [Browser-7] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:40:07 +06 - ERROR - __main__ - [Browser-8] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:40:17 +06 - ERROR - __main__ - [Browser-9] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:40:27 +06 - ERROR - __main__ - [Browser-10] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 69, in run_single_browser_instance
+    options = browser_config.get_chrome_options(
+        binary_path=config['CHROMIUM_BINARY_PATH'], user_agent=selected_user_agent,
+    ...<2 lines>...
+        timezone=timezone
+    )
+TypeError: get_chrome_options() missing 1 required positional argument: 'profile_path'
+2025-09-29 07:44:24 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:44:34 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:44:45 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:44:56 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:45:08 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:45:18 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 07:45:28 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s15.liveproxies.io after 6 attempts.
+2025-09-29 07:48:07 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s11.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-29 07:49:49 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 62, in run_browser_workflow
+    driver.get(iframe_page_url) # Use the chosen URL
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-29 07:49:49 +06 - ERROR - scripts.workflow - [Browser-9] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 62, in run_browser_workflow
+    driver.get(iframe_page_url) # Use the chosen URL
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-29 08:00:40 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 91, in run_browser_workflow
+    if not eligible_links: raise Exception("No eligible random links found.")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: No eligible random links found.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 08:01:13 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 08:01:14 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 08:01:14 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 08:01:39 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 08:13:47 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 08:13:47 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 08:13:47 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 08:13:48 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 08:13:49 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 08:13:49 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 08:13:50 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 08:13:51 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 08:13:52 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 08:13:52 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 08:14:24 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:24 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:25 +06 - ERROR - scripts.workflow - [Browser-6] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:25 +06 - ERROR - scripts.workflow - [Browser-8] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:25 +06 - ERROR - scripts.workflow - [Browser-4] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:25 +06 - ERROR - scripts.workflow - [Browser-5] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:25 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:26 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:27 +06 - ERROR - scripts.workflow - [Browser-7] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 08:14:27 +06 - ERROR - scripts.workflow - [Browser-9] Could not find 'Visit Website' button by text or class. Terminating.
+2025-09-29 09:55:50 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s4.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+2025-09-29 09:55:51 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 09:56:02 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 09:56:14 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 09:56:24 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s14.liveproxies.io after 3 attempts.
+2025-09-29 10:01:08 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00AAC7F3+24435]
+	(No symbol) [0x00A32074]
+	(No symbol) [0x009006E3]
+	(No symbol) [0x00948B39]
+	(No symbol) [0x00948E8B]
+	(No symbol) [0x00991AC2]
+	(No symbol) [0x0096D804]
+	(No symbol) [0x0098F20A]
+	(No symbol) [0x0096D5B6]
+	(No symbol) [0x0093C54F]
+	(No symbol) [0x0093D894]
+	GetHandleVerifier [0x00DB70A3+3213347]
+	GetHandleVerifier [0x00DCB0C9+3295305]
+	GetHandleVerifier [0x00DC558C+3271948]
+	GetHandleVerifier [0x00B47360+658144]
+	(No symbol) [0x00A3B27D]
+	(No symbol) [0x00A38208]
+	(No symbol) [0x00A383A9]
+	(No symbol) [0x00A2AAC0]
+	BaseThreadInitThunk [0x762F5D49+25]
+	RtlInitializeExceptionChain [0x7792D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7792D661+561]
+
+2025-09-29 10:01:08 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 10:01:08 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 10:01:09 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 10:01:09 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 10:01:10 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 10:01:11 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 10:01:11 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 10:01:11 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 10:01:44 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:10:17 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s10.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 502 Bad Gateway')))
+2025-09-29 10:10:28 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s10.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 502 Bad Gateway')))
+2025-09-29 10:10:39 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s10.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 502 Bad Gateway')))
+2025-09-29 10:10:49 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s10.liveproxies.io after 3 attempts.
+2025-09-29 10:14:27 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 10:14:27 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 10:14:28 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 10:14:29 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 10:14:29 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 10:14:30 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 10:14:31 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 10:14:31 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 10:14:59 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 10:15:59 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 102, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00AAC7F3+24435]
+	(No symbol) [0x00A32074]
+	(No symbol) [0x009006E3]
+	(No symbol) [0x00948B39]
+	(No symbol) [0x00948E8B]
+	(No symbol) [0x00991AC2]
+	(No symbol) [0x0096D804]
+	(No symbol) [0x0098F20A]
+	(No symbol) [0x0096D5B6]
+	(No symbol) [0x0093C54F]
+	(No symbol) [0x0093D894]
+	GetHandleVerifier [0x00DB70A3+3213347]
+	GetHandleVerifier [0x00DCB0C9+3295305]
+	GetHandleVerifier [0x00DC558C+3271948]
+	GetHandleVerifier [0x00B47360+658144]
+	(No symbol) [0x00A3B27D]
+	(No symbol) [0x00A38208]
+	(No symbol) [0x00A383A9]
+	(No symbol) [0x00A2AAC0]
+	BaseThreadInitThunk [0x762F5D49+25]
+	RtlInitializeExceptionChain [0x7792D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x7792D661+561]
+
+2025-09-29 10:30:01 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 10:30:31 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 10:31:02 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 10:31:12 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s15.liveproxies.io after 3 attempts.
+2025-09-29 10:38:02 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 10:38:02 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 10:38:02 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 10:38:02 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 10:38:03 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 10:38:05 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 10:38:08 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 10:38:08 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 10:38:08 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 10:38:40 +06 - ERROR - scripts.workflow - [Browser-7] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:38:40 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:38:42 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:43:34 +06 - ERROR - scripts.cdp_handler - Failed to apply CDP spoofing script.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\cdp_handler.py", line 20, in apply_spoofing_script
+    driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'source': script_source
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 142, in execute_cdp_cmd
+    return super().execute_cdp_cmd(cmd, cmd_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 421, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=6230): Read timed out. (read timeout=120)
+2025-09-29 10:43:45 +06 - ERROR - scripts.cdp_handler - Failed to apply CDP spoofing script.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\cdp_handler.py", line 20, in apply_spoofing_script
+    driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'source': script_source
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 142, in execute_cdp_cmd
+    return super().execute_cdp_cmd(cmd, cmd_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 421, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=6260): Read timed out. (read timeout=120)
+2025-09-29 10:45:00 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 10:45:00 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 10:45:02 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 10:45:03 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 10:45:35 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:45:36 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:45:36 +06 - ERROR - scripts.workflow - [Browser-9] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:45:36 +06 - ERROR - scripts.workflow - [Browser-7] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:45:39 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 10:52:07 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 11:33:26 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 11:33:27 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 11:33:27 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 11:33:27 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 11:33:28 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:33:29 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 11:33:29 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 11:33:30 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 11:33:30 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 11:33:31 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 11:34:03 +06 - ERROR - scripts.workflow - [Browser-4] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:34:03 +06 - ERROR - scripts.workflow - [Browser-7] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:35:48 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:36:13 +06 - ERROR - scripts.workflow - [Browser-10] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:36:40 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:36:40 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:36:40 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:36:42 +06 - ERROR - scripts.workflow - [Browser-9] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:37:18 +06 - ERROR - scripts.workflow - [Browser-4] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:37:18 +06 - ERROR - scripts.workflow - [Browser-2] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:37:18 +06 - ERROR - scripts.workflow - [Browser-3] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:38:03 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:38:35 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:39:09 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s7.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 11:39:32 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s7.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 11:40:49 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:44:10 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 11:44:11 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 11:44:12 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 11:44:12 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:44:12 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 11:44:13 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 11:44:13 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 11:44:13 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 11:44:46 +06 - ERROR - scripts.workflow - [Browser-8] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:47:57 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 92, in run_browser_workflow
+    if not eligible_links: raise Exception("No eligible random links found.")
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: No eligible random links found.
+2025-09-29 11:48:27 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:48:29 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 11:48:29 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 11:48:29 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 11:48:30 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 11:48:30 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 11:48:31 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 11:48:31 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 11:48:37 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 11:49:10 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:49:35 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s2.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-29 11:53:57 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 11:53:58 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 11:54:00 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 11:54:00 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 11:54:01 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 11:54:01 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 11:54:01 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 11:54:02 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 11:54:02 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:54:05 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 11:54:37 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:54:37 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 11:56:08 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:57:40 +06 - ERROR - __main__ - [Browser-10] A critical error occurred in the main worker.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\main.py", line 88, in run_single_browser_instance
+    driver = webdriver.Chrome(service=service, options=options)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 260, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 357, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created
+from chrome not reachable
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A055E]
+	(No symbol) [0x0079427A]
+	(No symbol) [0x007D8DE6]
+	(No symbol) [0x007D3E6E]
+	(No symbol) [0x007CF3E9]
+	(No symbol) [0x00819686]
+	(No symbol) [0x008190BA]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 11:59:05 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 11:59:05 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 11:59:05 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 11:59:05 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 11:59:06 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 11:59:06 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 11:59:07 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 11:59:08 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:04:56 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:05:06 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:05:06 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:05:07 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:05:07 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:05:07 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:05:08 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:05:08 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:05:08 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:05:37 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:06:37 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 102, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:08:31 +06 - ERROR - scripts.workflow - [Browser-10] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:10:12 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:10:12 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:10:13 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:10:14 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:10:47 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:11:23 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-29 12:11:53 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:12:24 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:12:34 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s5.liveproxies.io after 3 attempts.
+2025-09-29 12:16:04 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:16:05 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:16:05 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:16:06 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:16:06 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:16:07 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:16:08 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:16:08 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:16:08 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:20:41 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:20:42 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:20:42 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:20:42 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:20:42 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:20:45 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:20:45 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:20:45 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:20:46 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:20:46 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:21:18 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:24:54 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 74, in run_browser_workflow
+    wait_25s.until(EC.element_to_be_clickable((By.LINK_TEXT, target_link_text))).click()
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:26:18 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:26:19 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:26:19 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:26:20 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:26:21 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:26:21 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:26:22 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:26:22 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:28:13 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:32:18 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:32:28 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:32:28 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:32:29 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:32:29 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:32:29 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:32:30 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:32:31 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:32:31 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:32:31 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:33:04 +06 - ERROR - scripts.workflow - [Browser-6] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:33:04 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:33:28 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s15.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))
+2025-09-29 12:37:07 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:37:08 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:37:09 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:37:09 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:37:09 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:37:10 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:37:10 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:37:10 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:37:11 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:37:11 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:37:44 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:37:45 +06 - ERROR - scripts.workflow - [Browser-9] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:43:21 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:43:23 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:43:23 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:43:23 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:43:23 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:43:24 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:43:24 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:43:25 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:43:25 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:43:25 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:43:58 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 12:44:41 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s6.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:45:11 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s6.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:45:41 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s6.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:45:51 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s6.liveproxies.io after 3 attempts.
+2025-09-29 12:49:27 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:49:29 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:49:29 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:49:30 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:49:31 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:49:31 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:49:33 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:49:33 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:49:35 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:51:36 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:51:56 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:05 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:18 +06 - ERROR - scripts.workflow - [Browser-9] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:22 +06 - ERROR - scripts.workflow - [Browser-10] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:47 +06 - ERROR - scripts.workflow - [Browser-3] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:47 +06 - ERROR - scripts.workflow - [Browser-4] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:48 +06 - ERROR - scripts.workflow - [Browser-2] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:48 +06 - ERROR - scripts.workflow - [Browser-1] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:52:48 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 71, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 12:57:06 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 12:57:06 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 12:57:06 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 12:57:06 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 12:57:09 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 12:57:10 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 12:57:10 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 12:57:13 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 12:57:14 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 12:57:14 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 12:58:34 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:59:05 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:59:35 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s5.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 12:59:45 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s5.liveproxies.io after 3 attempts.
+2025-09-29 13:02:58 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 13:02:58 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:02:59 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:02:59 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:03:00 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 13:03:00 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:03:00 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 13:03:00 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 13:03:00 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:03:33 +06 - ERROR - scripts.workflow - [Browser-7] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 13:03:34 +06 - ERROR - scripts.workflow - [Browser-2] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 13:04:17 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 13:04:47 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 13:05:17 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s14.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Read timed out. (read timeout=20)
+2025-09-29 13:05:27 +06 - ERROR - __main__ - REJECTED: Failed to verify location for proxy b2b-s14.liveproxies.io after 3 attempts.
+2025-09-29 13:08:38 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 13:08:38 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 13:08:39 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:08:39 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:08:40 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:08:40 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 13:08:41 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 13:08:42 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:08:43 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:13:17 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:13:17 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 13:13:17 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:13:18 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 13:13:18 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 13:13:19 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:13:19 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 13:13:19 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 13:13:20 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:13:20 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:14:18 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s13.liveproxies.io] Failed to connect through proxy to get public IP. Error: Response ended prematurely
+2025-09-29 13:15:02 +06 - ERROR - scripts.workflow - [Browser-3] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 13:18:21 +06 - ERROR - scripts.workflow - [Browser-4] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 87, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x007E8B39]
+	(No symbol) [0x007E8E8B]
+	(No symbol) [0x00831AC2]
+	(No symbol) [0x0080D804]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 13:18:29 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:18:30 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:18:30 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:18:31 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:18:31 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:18:31 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 13:18:32 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 13:18:32 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 13:19:05 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 13:20:28 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 13:22:53 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 13:22:54 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 13:22:54 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:22:54 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:22:55 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:22:55 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:22:56 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:23:00 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 13:23:57 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-b2b-s11.liveproxies.io] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-09-29 13:25:24 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 64, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0094C7F3+24435]
+	(No symbol) [0x008D2074]
+	(No symbol) [0x007A06E3]
+	(No symbol) [0x0079DB6E]
+	(No symbol) [0x00791458]
+	(No symbol) [0x00792D60]
+	(No symbol) [0x007916E7]
+	(No symbol) [0x00791243]
+	(No symbol) [0x00790F51]
+	(No symbol) [0x0078EE30]
+	(No symbol) [0x0078F8BB]
+	(No symbol) [0x007A419E]
+	(No symbol) [0x0082FEE7]
+	(No symbol) [0x0080D7BC]
+	(No symbol) [0x0082F20A]
+	(No symbol) [0x0080D5B6]
+	(No symbol) [0x007DC54F]
+	(No symbol) [0x007DD894]
+	GetHandleVerifier [0x00C570A3+3213347]
+	GetHandleVerifier [0x00C6B0C9+3295305]
+	GetHandleVerifier [0x00C6558C+3271948]
+	GetHandleVerifier [0x009E7360+658144]
+	(No symbol) [0x008DB27D]
+	(No symbol) [0x008D8208]
+	(No symbol) [0x008D83A9]
+	(No symbol) [0x008CAAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 13:27:46 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 13:27:47 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 13:27:48 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 13:27:48 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 13:27:48 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 13:27:48 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 13:27:49 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 13:27:50 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 13:27:51 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 13:28:46 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
+2025-09-29 15:52:35 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-res.proxy-seller.com] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2025-09-29 15:53:42 +06 - ERROR - scripts.workflow - [Browser-6] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F4DB6E]
+	(No symbol) [0x00F41458]
+	(No symbol) [0x00F42D60]
+	(No symbol) [0x00F416E7]
+	(No symbol) [0x00F41243]
+	(No symbol) [0x00F40F51]
+	(No symbol) [0x00F3EE30]
+	(No symbol) [0x00F3F8BB]
+	(No symbol) [0x00F5419E]
+	(No symbol) [0x00FDFEE7]
+	(No symbol) [0x00FBD7BC]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 15:54:11 +06 - ERROR - scripts.workflow - [Browser-8] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F4DB6E]
+	(No symbol) [0x00F41458]
+	(No symbol) [0x00F42D60]
+	(No symbol) [0x00F416E7]
+	(No symbol) [0x00F41243]
+	(No symbol) [0x00F40F51]
+	(No symbol) [0x00F3EE30]
+	(No symbol) [0x00F3F8BB]
+	(No symbol) [0x00F5419E]
+	(No symbol) [0x00FDFEE7]
+	(No symbol) [0x00FBD7BC]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 15:54:34 +06 - ERROR - scripts.workflow - [Browser-10] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F4DB6E]
+	(No symbol) [0x00F41458]
+	(No symbol) [0x00F42D60]
+	(No symbol) [0x00F416E7]
+	(No symbol) [0x00F41243]
+	(No symbol) [0x00F40F51]
+	(No symbol) [0x00F3EE30]
+	(No symbol) [0x00F3F8BB]
+	(No symbol) [0x00F5419E]
+	(No symbol) [0x00FDFEE7]
+	(No symbol) [0x00FBD7BC]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 15:56:15 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 15:56:16 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 15:56:16 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 15:56:16 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 15:56:16 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 15:56:16 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 15:56:18 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 15:56:51 +06 - ERROR - scripts.workflow - [Browser-4] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:16:39 +06 - ERROR - scripts.cdp_handler - Failed to apply CDP spoofing script.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\cdp_handler.py", line 20, in apply_spoofing_script
+    driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'source': script_source
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 142, in execute_cdp_cmd
+    return super().execute_cdp_cmd(cmd, cmd_args)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 421, in execute_cdp_cmd
+    return self.execute("executeCdpCommand", {"cmd": cmd, "params": cmd_args})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=4057): Read timed out. (read timeout=120)
+2025-09-29 16:18:39 +06 - ERROR - scripts.workflow - [Browser-5] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 446, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=4057): Read timed out. (read timeout=120)
+2025-09-29 16:20:02 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:20:02 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 16:20:02 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:20:02 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:20:02 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 16:20:03 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:20:03 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:20:03 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:20:04 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:21:05 +06 - ERROR - scripts.timezone_handler - [ProxyCheck-res.proxy-seller.com] Failed to connect through proxy to get public IP. Error: HTTPSConnectionPool(host='api.ipify.org', port=443): Max retries exceeded with url: /?format=json (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:2648)')))
+2025-09-29 16:22:33 +06 - ERROR - scripts.workflow - [Browser-7] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F4DB6E]
+	(No symbol) [0x00F41458]
+	(No symbol) [0x00F42D60]
+	(No symbol) [0x00F416E7]
+	(No symbol) [0x00F41243]
+	(No symbol) [0x00F40F51]
+	(No symbol) [0x00F3EE30]
+	(No symbol) [0x00F3F8BB]
+	(No symbol) [0x00F5419E]
+	(No symbol) [0x00FDFEE7]
+	(No symbol) [0x00FBD7BC]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 16:23:41 +06 - ERROR - scripts.workflow - [Browser-4] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 73, in run_browser_workflow
+    wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.XPATH, "//iframe[contains(@src, 'facebook.com')]")))
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py", line 146, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F98B39]
+	(No symbol) [0x00F98E8B]
+	(No symbol) [0x00FE1AC2]
+	(No symbol) [0x00FBD804]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 16:24:32 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:24:32 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:24:34 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:24:35 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:24:35 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:24:36 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:24:37 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:24:44 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 16:25:16 +06 - ERROR - scripts.workflow - [Browser-8] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:29:25 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:29:26 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 16:29:29 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:29:29 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:29:30 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:29:31 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 16:29:31 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:29:31 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:29:32 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 16:29:32 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:30:27 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 16:31:23 +06 - ERROR - scripts.workflow - [Browser-4] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x010FC7F3+24435]
+	(No symbol) [0x01082074]
+	(No symbol) [0x00F506E3]
+	(No symbol) [0x00F4DB6E]
+	(No symbol) [0x00F41458]
+	(No symbol) [0x00F42D60]
+	(No symbol) [0x00F416E7]
+	(No symbol) [0x00F41243]
+	(No symbol) [0x00F40F51]
+	(No symbol) [0x00F3EE30]
+	(No symbol) [0x00F3F8BB]
+	(No symbol) [0x00F5419E]
+	(No symbol) [0x00FDFEE7]
+	(No symbol) [0x00FBD7BC]
+	(No symbol) [0x00FDF20A]
+	(No symbol) [0x00FBD5B6]
+	(No symbol) [0x00F8C54F]
+	(No symbol) [0x00F8D894]
+	GetHandleVerifier [0x014070A3+3213347]
+	GetHandleVerifier [0x0141B0C9+3295305]
+	GetHandleVerifier [0x0141558C+3271948]
+	GetHandleVerifier [0x01197360+658144]
+	(No symbol) [0x0108B27D]
+	(No symbol) [0x01088208]
+	(No symbol) [0x010883A9]
+	(No symbol) [0x0107AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 16:33:59 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:34:00 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 16:34:00 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:34:01 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:34:01 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:34:01 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:34:02 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 16:34:02 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:34:02 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:34:35 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:34:35 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:34:50 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 16:38:34 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:38:34 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:38:35 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:38:36 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:38:36 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 16:38:36 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 16:38:36 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:38:36 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 16:38:37 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:38:38 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:39:10 +06 - ERROR - scripts.workflow - [Browser-5] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:39:11 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:39:22 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 16:43:17 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 16:43:17 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 16:43:18 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 16:43:18 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 16:43:19 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 16:43:19 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 16:43:20 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 16:43:20 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 16:43:20 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 16:43:20 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 16:43:53 +06 - ERROR - scripts.workflow - [Browser-9] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:43:53 +06 - ERROR - scripts.workflow - [Browser-1] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 16:44:14 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 16:44:24 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
+2025-09-29 17:08:04 +06 - ERROR - scripts.workflow - [Browser-1] A critical error terminated the workflow.
+Traceback (most recent call last):
+  File "C:\Users\trr\Documents\my_automation\scripts\workflow.py", line 66, in run_browser_workflow
+    driver.get(iframe_page_url)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 473, in get
+    self.execute(Command.GET, {"url": url})
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\trr\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_TUNNEL_CONNECTION_FAILED
+  (Session info: chrome=134.0.6998.36)
+Stacktrace:
+	GetHandleVerifier [0x0049C7F3+24435]
+	(No symbol) [0x00422074]
+	(No symbol) [0x002F06E3]
+	(No symbol) [0x002EDB6E]
+	(No symbol) [0x002E1458]
+	(No symbol) [0x002E2D60]
+	(No symbol) [0x002E16E7]
+	(No symbol) [0x002E1243]
+	(No symbol) [0x002E0F51]
+	(No symbol) [0x002DEE30]
+	(No symbol) [0x002DF8BB]
+	(No symbol) [0x002F419E]
+	(No symbol) [0x0037FEE7]
+	(No symbol) [0x0035D7BC]
+	(No symbol) [0x0037F20A]
+	(No symbol) [0x0035D5B6]
+	(No symbol) [0x0032C54F]
+	(No symbol) [0x0032D894]
+	GetHandleVerifier [0x007A70A3+3213347]
+	GetHandleVerifier [0x007BB0C9+3295305]
+	GetHandleVerifier [0x007B558C+3271948]
+	GetHandleVerifier [0x00537360+658144]
+	(No symbol) [0x0042B27D]
+	(No symbol) [0x00428208]
+	(No symbol) [0x004283A9]
+	(No symbol) [0x0041AAC0]
+	BaseThreadInitThunk [0x75AD5D49+25]
+	RtlInitializeExceptionChain [0x77B3D6DB+107]
+	RtlGetAppContainerNamedObjectPath [0x77B3D661+561]
+
+2025-09-29 17:11:06 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 17:11:06 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 17:11:07 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 17:11:07 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 17:11:07 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 17:11:08 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 17:11:08 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 17:11:08 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 17:11:09 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 17:11:42 +06 - ERROR - scripts.workflow - [Browser-10] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 17:11:42 +06 - ERROR - scripts.workflow - [Browser-5] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 17:11:43 +06 - ERROR - scripts.workflow - [Browser-3] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 17:11:54 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 17:15:43 +06 - ERROR - scripts.workflow - [Browser-3] Timed out waiting for page body to get title.
+2025-09-29 17:15:44 +06 - ERROR - scripts.workflow - [Browser-6] Timed out waiting for page body to get title.
+2025-09-29 17:15:45 +06 - ERROR - scripts.workflow - [Browser-8] Timed out waiting for page body to get title.
+2025-09-29 17:15:46 +06 - ERROR - scripts.workflow - [Browser-1] Timed out waiting for page body to get title.
+2025-09-29 17:15:47 +06 - ERROR - scripts.workflow - [Browser-2] Timed out waiting for page body to get title.
+2025-09-29 17:15:47 +06 - ERROR - scripts.workflow - [Browser-7] Timed out waiting for page body to get title.
+2025-09-29 17:15:47 +06 - ERROR - scripts.workflow - [Browser-10] Timed out waiting for page body to get title.
+2025-09-29 17:15:48 +06 - ERROR - scripts.workflow - [Browser-9] Timed out waiting for page body to get title.
+2025-09-29 17:15:49 +06 - ERROR - scripts.workflow - [Browser-5] Timed out waiting for page body to get title.
+2025-09-29 17:15:50 +06 - ERROR - scripts.workflow - [Browser-4] Timed out waiting for page body to get title.
+2025-09-29 17:16:22 +06 - ERROR - scripts.workflow - [Browser-4] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 17:16:23 +06 - ERROR - scripts.workflow - [Browser-8] Could not find 'Visit Website' using complex locator. Terminating.
+2025-09-29 17:16:38 +06 - ERROR - __main__ - Error while deleting profile directories: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\trr\\Documents\\my_automation\\profiles\\profile_Browser-1_1d9388be7d444e04\\chrome_debug.log'
+2025-09-29 17:16:48 +06 - CRITICAL - scripts.proxy_handler - Proxy file is empty or contains no valid proxies.
