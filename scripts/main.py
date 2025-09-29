@@ -4,6 +4,7 @@ import sys
 import logging
 import random
 import threading
+import json # <-- NEW IMPORT for JSON handling
 import secrets  # <-- NEW IMPORT for random hex names
 import shutil   # <-- NEW IMPORT for deleting directories
 from selenium import webdriver
@@ -34,6 +35,48 @@ def load_config(project_root):
         logger.critical(f"Configuration file not found at '{config_path}'")
         sys.exit(1)
     return config
+
+
+
+
+def select_browser_config(project_root: str) -> dict:
+    """
+    Loads browser configurations from paths.json, prompts the user to choose one,
+    and returns the selected, processed configuration.
+    """
+    config_path = os.path.join(project_root, 'config', 'paths.json')
+    try:
+        with open(config_path, 'r') as f:
+            profiles = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        logger.critical(f"Could not load or parse config/paths.json. Error: {e}")
+        sys.exit(1)
+
+    print("\n" + "="*50)
+    print("Please select a browser configuration to use:")
+    print("="*50)
+    for i, profile in enumerate(profiles):
+        print(f"  {i+1}. {profile['description']}")
+    
+    while True:
+        try:
+            choice = int(input("Enter your choice (number): "))
+            if 1 <= choice <= len(profiles):
+                selected_profile = profiles[choice-1]
+                
+                # --- DYNAMIC PATH EXPANSION ---
+                # Expand '~' to the user's home directory
+                selected_profile['chromium_binary_path'] = os.path.expanduser(selected_profile['chromium_binary_path'])
+                
+                print(f"\nUsing profile: '{selected_profile['description']}'")
+                logger.info(f"Using dynamic browser path: {selected_profile['chromium_binary_path']}")
+                return selected_profile
+            else:
+                print(f"Invalid number. Please enter a number between 1 and {len(profiles)}.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
 
 def load_user_agents(project_root):
     #... (no changes)
@@ -175,25 +218,63 @@ def get_user_choice(prompt_text: str, options: list) -> str:
             print("Invalid input. Please enter a number.")
 
 
+def get_launch_delay() -> float:
+    """Prompts the user for a launch delay and validates the input."""
+    min_delay, max_delay, default_delay = 0.1, 20.0, 10.0
+    
+    print("\n" + "="*50)
+    print("Configure Browser Launch Delay")
+    print("="*50)
+    
+    while True:
+        prompt = f"Enter launch delay ({min_delay} to {max_delay} seconds, press Enter for default of {default_delay}): "
+        user_input = input(prompt).strip()
+        
+        if not user_input:
+            print(f"Using default delay: {default_delay} seconds.\n")
+            return default_delay
+            
+        try:
+            delay = float(user_input)
+            if min_delay <= delay <= max_delay:
+                print(f"Using launch delay: {delay} seconds.\n")
+                return delay
+            else:
+                print(f"Error: Delay must be between {min_delay} and {max_delay}.")
+        except ValueError:
+            print("Error: Invalid input. Please enter a number.")
+
+
+
 def main():
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     logger_setup.setup_logging(project_root)
     
+    # --- Get all user configurations at the start ---
+    browser_paths = select_browser_config(project_root)
     selected_iframe_url = get_user_choice("Select an initial page for the workflow:", workflow.IFRAME_PAGE_OPTIONS)
     selected_target_link = get_user_choice("Select a target link to click in the first iframe:", workflow.TARGET_LINK_OPTIONS)
+    launch_delay = get_launch_delay() # <-- NEW: Get launch delay from user
     
     logger.info("--- Automation Framework Started ---")
     run_mode = input("Enter 'loop' to run continuously, or press Enter to run once: ").lower().strip()
     
     config = { 
-        'NUMBER_OF_BROWSERS': 10, 'LAUNCH_DELAY_SECONDS': 10, 
+        'NUMBER_OF_BROWSERS': 10, 
+        'LAUNCH_DELAY_SECONDS': launch_delay, # <-- UPDATED: Use the variable
         'MOBILE_WIDTH': 750, 'MOBILE_HEIGHT': 1334,
         'MOBILE_PIXEL_RATIO': 2.0, 'MOBILE_COLOR_DEPTH': 24,
         'IFRAME_PAGE_URL': selected_iframe_url,
-        'TARGET_LINK_TEXT': selected_target_link
+        'TARGET_LINK_TEXT': selected_target_link,
+        'CHROMIUM_BINARY_PATH': browser_paths['chromium_binary_path'],
+        'CHROMEDRIVER_PATH': browser_paths['chromedriver_path']
     }
     
-    config.update(load_config(project_root))
+    
+    # This no longer loads paths, but could be used for other configs in the future.
+    # For now, we don't need it.
+    # config.update(load_config(project_root)) 
+    
     user_agents = load_user_agents(project_root)
     proxy_file_path = os.path.join(project_root, 'config', 'proxies.txt')
 

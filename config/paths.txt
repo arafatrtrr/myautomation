@@ -1,2 +1,0 @@
-CHROMIUM_BINARY_PATH=C:\Users\trr\.gologin\browser\orbita-browser-134\chrome.exe
-CHROMEDRIVER_PATH=C:\chromedriver.exe

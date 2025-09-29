@@ -1,0 +1,17 @@
+[
+  {
+    "description": "GoLogin Orbita Browser (Default User)",
+    "chromium_binary_path": "~\\.gologin\\browser\\orbita-browser-134\\chrome.exe",
+    "chromedriver_path": "C:\\chromedriver.exe"
+  },
+  {
+    "description": "Standard Google Chrome (if installed)",
+    "chromium_binary_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "chromedriver_path": "C:\\chromedriver.exe"
+  },
+  {
+    "description": "Custom Path Example",
+    "chromium_binary_path": "D:\\MyPortableBrowser\\chrome.exe",
+    "chromedriver_path": "D:\\drivers\\chromedriver.exe"
+  }
+]

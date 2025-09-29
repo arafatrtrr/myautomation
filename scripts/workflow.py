@@ -2,6 +2,8 @@
 import time
 import logging
 import random
+import json  # <-- NEW IMPORT
+import os # <-- NEW IMPORT for file paths
 from urllib.parse import urlparse
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -9,18 +11,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
-# --- Workflow Configuration Options ---
-IFRAME_PAGE_OPTIONS = [
-    {'desc': 'this is from momin', 'url': 'https://tinyurl.com/momin10k-003'},
-    {'desc': 'this is from arefin', 'url': 'https://tinyurl.com/momin10k-003'},
-    {'desc': 'this is from thisha', 'url': 'https://cmdkduen.com'},
-]
+_workflow_vars_path = os.path.join(os.path.dirname(__file__), 'workflow_variables', 'variables.json')
+try:
+    with open(_workflow_vars_path, 'r') as f:
+        _workflow_vars = json.load(f)
+    IFRAME_PAGE_OPTIONS = _workflow_vars['iframe_page_options']
+    TARGET_LINK_OPTIONS = _workflow_vars['target_link_options']
+except (FileNotFoundError, KeyError) as e:
+    # If the file is missing or malformed, provide fallback data to prevent crashes
+    logging.critical(f"Could not load workflow variables from JSON: {e}. Using fallback defaults.")
+    IFRAME_PAGE_OPTIONS = [{'desc': 'Fallback Page', 'url': 'https://example.com'}]
+    TARGET_LINK_OPTIONS = [{'desc': 'Fallback Link', 'url': 'https://example.com'}]
 
-TARGET_LINK_OPTIONS = [
-    {'desc': 'momin 1', 'url': 'https://tinyurl.com/5n6s6hxt'},
-    {'desc': 'mom', 'url': 'mmmmm'},
-    {'desc': 'momin 3', 'url': 'https://tinyurl.com/2emw5ek6'},
-]
 
 MASTER_IFRAME_ID = "master-1"
 VISIT_WEBSITE_TEXT = "Visit Website"
