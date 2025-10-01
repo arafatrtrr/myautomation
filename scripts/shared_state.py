@@ -1,8 +1,4 @@
 # scripts/shared_state.py
-"""
-Manages a shared JSON state file for coordinating multiple browser threads.
-All file operations are thread-safe using a threading.Lock.
-"""
 import json
 import os
 import threading
@@ -38,7 +34,7 @@ def _read_state():
         with open(STATE_FILE, 'r') as f:
             return json.load(f)
     except (json.JSONDecodeError, FileNotFoundError):
-        return None # Handle race condition where file is being written
+        return None
 
 def _write_state(data: dict):
     """Writes data to the JSON file. Not thread-safe by itself."""
@@ -48,7 +44,7 @@ def _write_state(data: dict):
 def update_instance_gate(instance_id: str, gate_number: int, status: str = "ok"):
     """Thread-safely updates the gate and status of a specific browser instance."""
     with _lock:
-        for _ in range(5): # Retry loop to handle read/write conflicts
+        for _ in range(5):
             state = _read_state()
             if state and instance_id in state["instances"]:
                 state["instances"][instance_id]["gate"] = gate_number
@@ -60,7 +56,7 @@ def update_instance_gate(instance_id: str, gate_number: int, status: str = "ok")
         logger.error(f"Failed to update state for {instance_id} after multiple retries.")
 
 
-def wait_at_gate(instance_id: str, gate_number: int, all_instance_ids: list, timeout: int = 300):
+def wait_at_gate(instance_id: str, gate_number: int, all_instance_ids: list, timeout: int = 120):
     """
     Causes a thread to wait until all other active instances have reached the same gate.
     """
@@ -73,24 +69,39 @@ def wait_at_gate(instance_id: str, gate_number: int, all_instance_ids: list, tim
                 time.sleep(1)
                 continue
             
-            # Get instances that are still supposed to be active
-            active_instances = [inst_id for inst_id, data in state["instances"].items() if data["status"] not in ["failed", "loser"]]
+            active_instances = [inst_id for inst_id, data in state["instances"].items() if data["status"] not in ["failed", "loser", "critical_failure"]]
+            if not active_instances: return True # All other browsers failed, so we can proceed
             
-            # Check if all of them have reached this gate or a higher one
             all_at_gate = all(state["instances"][inst_id]["gate"] >= gate_number for inst_id in active_instances)
 
             if all_at_gate:
                 logger.info(f"[{instance_id}] All active instances have reached Gate #{gate_number}. Proceeding.")
                 return True
-        time.sleep(1) # Wait a second before checking again
+        time.sleep(1)
     
     logger.error(f"[{instance_id}] Timed out waiting at Gate #{gate_number}. Aborting.")
     return False
 
+def get_instances_to_close_by_number(num_to_close: int) -> list:
+    """
+    Returns a list of the highest-numbered active instances to close.
+    """
+    with _lock:
+        state = _read_state()
+        if not state or num_to_close == 0:
+            return []
+        
+        active_instances = [inst_id for inst_id, data in state["instances"].items() if data["status"] not in ["failed", "loser", "critical_failure"]]
+        
+        # Sort by instance number (e.g., Browser-10 > Browser-1) in descending order
+        active_instances.sort(key=lambda x: int(x.split('-')[1]), reverse=True)
+        
+        # Return the top N instances from the sorted list
+        return active_instances[:num_to_close]
+
 def attempt_to_win_race(instance_id: str, max_winners: int) -> bool:
     """
     Thread-safely tries to become a winner in the race condition.
-    Returns True if this instance is a winner, False otherwise.
     """
     with _lock:
         state = _read_state()

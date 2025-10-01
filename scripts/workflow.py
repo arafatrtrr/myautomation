@@ -2,8 +2,8 @@
 import time
 import logging
 import random
-import json  # <-- NEW IMPORT
-import os # <-- NEW IMPORT for file paths
+import json
+import os
 from urllib.parse import urlparse
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -11,6 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
+# --- Load Workflow Configuration from JSON ---
 _workflow_vars_path = os.path.join(os.path.dirname(__file__), 'workflow_variables', 'variables.json')
 try:
     with open(_workflow_vars_path, 'r') as f:
@@ -18,20 +19,20 @@ try:
     IFRAME_PAGE_OPTIONS = _workflow_vars['iframe_page_options']
     TARGET_LINK_OPTIONS = _workflow_vars['target_link_options']
 except (FileNotFoundError, KeyError) as e:
-    # If the file is missing or malformed, provide fallback data to prevent crashes
     logging.critical(f"Could not load workflow variables from JSON: {e}. Using fallback defaults.")
     IFRAME_PAGE_OPTIONS = [{'desc': 'Fallback Page', 'url': 'https://example.com'}]
     TARGET_LINK_OPTIONS = [{'desc': 'Fallback Link', 'url': 'https://example.com'}]
 
-
+# --- Workflow Configuration ---
 MASTER_IFRAME_ID = "master-1"
 VISIT_WEBSITE_TEXT = "Visit Website"
 STATIC_SLEEP = 10
-WINNERS_COUNT = 3
+WINNERS_COUNT = 2
+CLOSE_AFTER_FB_LINK = 2 # <-- NEW VARIABLE
 
 logger = logging.getLogger(__name__)
 
-# --- Helper Function for getting title with retry ---
+# --- Helper Function for getting title with retry (unchanged) ---
 def _get_title_with_retry(driver: WebDriver, instance_id: str, wait: WebDriverWait) -> str | None:
     try:
         wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
@@ -49,20 +50,17 @@ def _get_title_with_retry(driver: WebDriver, instance_id: str, wait: WebDriverWa
     except Exception:
         logger.error(f"[{instance_id}] Unexpected error getting page title.", exc_info=True)
         return None
- 
 
-# In scripts/workflow.py, replace the entire run_browser_workflow function
 
 def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof_script: str, shared_state, 
                          iframe_page_url: str, target_link_text: str):
     logger.info(f"[{instance_id}] Starting coordinated workflow with page '{iframe_page_url}' and link '{target_link_text}'.")
     
-    # Create Wait objects with configured timeouts
     wait_20s = WebDriverWait(driver, 20)
     wait_25s = WebDriverWait(driver, 25)
     
     try:
-        # === PHASE 1, 2, and beginning of 3 are unchanged ===
+        # === PHASE 1: Initial Navigation & First Tab Hop ===
         driver.get(iframe_page_url)
         time.sleep(STATIC_SLEEP)
         
@@ -81,10 +79,19 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         cdp_handler.apply_spoofing_script(driver=driver, script_source=spoof_script)
         driver.refresh()
 
+        # === PHASE 2: Second Page Navigation & Coordination Gate ===
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
         shared_state.update_instance_gate(instance_id, 2, "title_ok" if title else "failed")
         if not shared_state.wait_at_gate(instance_id, 2, []): return
+
+        # --- NEW LOGIC: Close a set number of profiles ---
+        if CLOSE_AFTER_FB_LINK > 0:
+            instances_to_close = shared_state.get_instances_to_close_by_number(CLOSE_AFTER_FB_LINK)
+            if instance_id in instances_to_close:
+                logger.warning(f"[{instance_id}] This instance has been selected for planned closure at Gate #2. Terminating workflow.")
+                return
+        logger.info(f"[{instance_id}] Passed second gate. Continuing workflow.")
 
         wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
         time.sleep(2)
@@ -94,6 +101,7 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         if not eligible_links: raise Exception("No eligible random links found.")
         random.choice(eligible_links).click()
 
+        # === PHASE 3: Third Page and "Visit Website" Race ===
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
         shared_state.update_instance_gate(instance_id, 3, "title_ok" if title else "failed")
@@ -104,27 +112,26 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
         wait_25s.until(EC.frame_to_be_available_and_switch_to_it((By.ID, MASTER_IFRAME_ID)))
         time.sleep(2)
 
-        try:
-            # --- NEW, MORE COMPLEX LOCATOR ---
-            # This XPath finds an <a> tag that EITHER contains the 'Visit Website' text
-            # OR contains a child <span> with a class 'p_si22'.
-            visit_locator = (By.XPATH, f"//a[contains(., '{VISIT_WEBSITE_TEXT}') or .//span[contains(@class, 'p_si22')]]")
-
-            wait_25s.until(EC.element_to_be_clickable(visit_locator))
-            
-            is_winner = shared_state.attempt_to_win_race(instance_id, WINNERS_COUNT)
-            if is_winner:
-                # We re-find the element to avoid StaleElementReferenceException
-                driver.find_element(*visit_locator).click()
-            else:
-                logger.warning(f"[{instance_id}] Lost race or limit reached. Terminating.")
-                return # Losers exit here
-        except TimeoutException:
-            logger.error(f"[{instance_id}] Could not find '{VISIT_WEBSITE_TEXT}' using complex locator. Terminating.")
-            shared_state.update_instance_gate(instance_id, 99, "failed")
+        if WINNERS_COUNT > 0:
+            try:
+                visit_locator = (By.XPATH, f"//a[contains(., '{VISIT_WEBSITE_TEXT}') or .//span[contains(@class, 'p_si22')]]")
+                wait_25s.until(EC.element_to_be_clickable(visit_locator))
+                
+                is_winner = shared_state.attempt_to_win_race(instance_id, WINNERS_COUNT)
+                if is_winner:
+                    driver.find_element(*visit_locator).click()
+                else:
+                    logger.warning(f"[{instance_id}] Lost race or limit reached. Terminating.")
+                    return
+            except TimeoutException:
+                logger.error(f"[{instance_id}] Could not find '{VISIT_WEBSITE_TEXT}'. Terminating.")
+                shared_state.update_instance_gate(instance_id, 99, "failed")
+                return
+        else:
+            logger.info(f"[{instance_id}] WINNERS_COUNT is 0. Terminating workflow as designed.")
             return
-            
-        # === PHASE 4: Winners' Final Actions (unchanged) ===
+
+        # === PHASE 4: Winners' Final Actions ===
         logger.info(f"[{instance_id}] Proceeding as a WINNER.")
         time.sleep(STATIC_SLEEP)
         title = _get_title_with_retry(driver, instance_id, wait_20s)
@@ -141,6 +148,7 @@ def run_browser_workflow(driver: WebDriver, instance_id: str, cdp_handler, spoof
             logger.info(f"[{instance_id}] No cookie button found within 3s, continuing.")
         
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(8)
         
         current_domain = urlparse(driver.current_url).netloc
         all_page_links = WebDriverWait(driver, 5).until(EC.presence_of_all_elements_located((By.XPATH, "//a[@href]")))
