@@ -27,7 +27,7 @@ except (FileNotFoundError, KeyError) as e:
 MASTER_IFRAME_ID = "master-1"
 VISIT_WEBSITE_TEXT = "Visit Website"
 STATIC_SLEEP = 10
-WINNERS_COUNT = 2
+WINNERS_COUNT = 3
 CLOSE_AFTER_FB_LINK = 2 # <-- NEW VARIABLE
 
 logger = logging.getLogger(__name__)
