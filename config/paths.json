@@ -1,7 +1,7 @@
 [
   {
     "description": "GoLogin Orbita Browser (Default User)",
-    "chromium_binary_path": "~\\.gologin\\browser\\orbita-browser-134\\chrome.exe",
+    "chromium_binary_path": "C:\\Users\\runneradmin\\.gologin\\browser\\orbita-browser-134\\chrome.exe",
     "chromedriver_path": "C:\\chromedriver.exe"
   },
   {
