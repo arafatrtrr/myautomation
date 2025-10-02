@@ -160,7 +160,7 @@ def run_single_browser_instance(instance_id: str, project_root: str, config: dic
         logger.info(f"[{instance_id}] Thread finished.")
 
 # --- NEW PROXY CHECKING WORKER ---
-def check_proxy_worker(proxy, valid_proxies_list, lock, max_retries=3, retry_delay=10):
+def check_proxy_worker(proxy, valid_proxies_list, lock, max_retries=1, retry_delay=10):
     """
     Worker function to check a single proxy with retry logic for API failures.
     """
