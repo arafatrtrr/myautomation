@@ -4,13 +4,14 @@ This module handles discovering the timezone and location of a proxy.
 """
 import requests
 import logging
+from typing import Optional
 
 logger = logging.getLogger(__name__)
 
 IP_ECHO_SERVICE_URL = "https://api.ipify.org?format=json"
 TIMEZONE_API_URL = "https://ip-score.com/json"
 
-def get_proxy_location_details(proxy: dict, instance_id: str) -> dict | None:
+def get_proxy_location_details(proxy: dict, instance_id: str) -> Optional[dict]:
     """
     Finds the location details (timezone and country code) for a given proxy.
 
