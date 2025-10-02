@@ -4,6 +4,7 @@ import logging
 import random
 import json
 import os
+from typing import Optional
 from urllib.parse import urlparse
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -33,7 +34,7 @@ CLOSE_AFTER_FB_LINK = 2 # <-- NEW VARIABLE
 logger = logging.getLogger(__name__)
 
 # --- Helper Function for getting title with retry (unchanged) ---
-def _get_title_with_retry(driver: WebDriver, instance_id: str, wait: WebDriverWait) -> str | None:
+def _get_title_with_retry(driver: WebDriver, instance_id: str, wait: WebDriverWait) -> Optional[str]:
     try:
         wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         title = driver.title
