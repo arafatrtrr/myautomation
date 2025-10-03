@@ -220,7 +220,7 @@ def get_user_choice(prompt_text: str, options: list) -> str:
 
 def get_launch_delay() -> float:
     """Prompts the user for a launch delay and validates the input."""
-    min_delay, max_delay, default_delay = 0.1, 20.0, 10.0
+    min_delay, max_delay, default_delay = 0.1, 20.0, 0.1
     
     print("\n" + "="*50)
     print("Configure Browser Launch Delay")
